@@ -280,10 +280,10 @@ html,body{height:100%;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoo
         <div class="hcard-mod" style="color:var(--pi)">Propiedad Intelectual</div>
         <div class="hcard-q">¿Qué pasa con los derechos de lo que creo en la UC?</div>
         <div class="hcard-div"></div>
-        <div class="sr pi" onclick="openPath('tit')"><div class="sr-inner"><div class="sr-cat">Titularidad</div><div class="sr-title">¿La UC puede quedarse con mi proyecto?</div></div><span class="sr-arr">→</span></div>
-        <div class="sr pi" onclick="openPath('pro')"><div class="sr-inner"><div class="sr-cat">Protección</div><div class="sr-title">¿Puedo patentar o proteger lo que creé?</div></div><span class="sr-arr">→</span></div>
-        <div class="sr pi" onclick="openPath('dif')"><div class="sr-inner"><div class="sr-cat">Difusión</div><div class="sr-title">¿Puedo publicar o mostrar mi trabajo?</div></div><span class="sr-arr">→</span></div>
-        <div class="sr pi" onclick="openPath('fon')"><div class="sr-inner"><div class="sr-cat">Fondos y Emprendimiento</div><div class="sr-title">¿PI + fondos, patentes o spin-off?</div></div><span class="sr-arr">→</span></div>
+        <div class="sr pi" onclick="openPath('tit')"><div class="sr-inner"><div class="sr-cat">Titularidad</div><div class="sr-title">¿De quién es la titularidad de lo que desarrollé?</div></div><span class="sr-arr">→</span></div>
+        <div class="sr pi" onclick="openPath('pro')"><div class="sr-inner"><div class="sr-cat">Protección</div><div class="sr-title">¿Puedo patentar o proteger lo que desarrollé?</div></div><span class="sr-arr">→</span></div>
+        <div class="sr pi" onclick="openPath('dif')"><div class="sr-inner"><div class="sr-cat">Difusión</div><div class="sr-title">¿Puedo publicar o difundir este desarrollo?</div></div><span class="sr-arr">→</span></div>
+        <div class="sr pi" onclick="openPath('fon')"><div class="sr-inner"><div class="sr-cat">Fondos y Emprendimiento</div><div class="sr-title">¿Qué pasa con la PI si postulo a un fondo o quiero emprender?</div></div><span class="sr-arr">→</span></div>
       </div>
 
       <!-- ÉTICA -->
@@ -300,7 +300,7 @@ html,body{height:100%;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoo
         <div class="hcard-mod" style="color:var(--eti)">Ética e Investigación</div>
         <div class="hcard-q">¿Cómo navegar la evaluación ética de mi proyecto?</div>
         <div class="hcard-div"></div>
-        <div class="sr eti" onclick="openPath('nec')"><div class="sr-inner"><div class="sr-cat">Evaluación ética</div><div class="sr-title">¿Mi proyecto necesita aprobación ética?</div></div><span class="sr-arr">→</span></div>
+        <div class="sr eti" onclick="openPath('nec')"><div class="sr-inner"><div class="sr-cat">Evaluación ética</div><div class="sr-title">¿Necesito evaluación de ética para mi proyecto?</div></div><span class="sr-arr">→</span></div>
         <div class="sr eti" onclick="openPath('proc')"><div class="sr-inner"><div class="sr-cat">Solicitud CEC</div><div class="sr-title">¿Cómo hago la solicitud paso a paso?</div></div><span class="sr-arr">→</span></div>
       </div>
 
@@ -314,12 +314,13 @@ html,body{height:100%;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoo
             <path d="M12 16.5v2" stroke="var(--con)" stroke-width="1.2" stroke-linecap="round"/>
           </svg>
         </div>
-        <div class="hcard-mod" style="color:var(--con)">Convenios con Empresas</div>
-        <div class="hcard-q">¿Qué pasa cuando una empresa se involucra con mi proyecto?</div>
+        <div class="hcard-mod" style="color:var(--con)">Convenios y Vínculos</div>
+        <div class="hcard-q">¿Qué sucede cuando una empresa u organización se vincula con tu desarrollo?</div>
         <div class="hcard-div"></div>
-        <div class="sr con" onclick="openPath('con_taller')"><div class="sr-inner"><div class="sr-cat">Taller académico</div><div class="sr-title">Una empresa participó como desafío en mi taller</div></div><span class="sr-arr">→</span></div>
-        <div class="sr con" onclick="openPath('con_uso')"><div class="sr-inner"><div class="sr-cat">Uso comercial</div><div class="sr-title">Una empresa quiere usar o comercializar mi proyecto</div></div><span class="sr-arr">→</span></div>
-        <div class="sr con" onclick="openPath('con_inv')"><div class="sr-inner"><div class="sr-cat">Proyecto de investigación</div><div class="sr-title">Participé en un proyecto de un académico</div></div><span class="sr-arr">→</span></div>
+        <div class="sr con" onclick="openPath('con_taller')"><div class="sr-inner"><div class="sr-cat">Taller académico</div><div class="sr-title">Una empresa u organización participó como contraparte en mi curso o taller</div></div><span class="sr-arr">→</span></div>
+        <div class="sr con" onclick="openPath('con_uso')"><div class="sr-inner"><div class="sr-cat">Uso comercial</div><div class="sr-title">Una empresa u organización está interesada en mi desarrollo o solución</div></div><span class="sr-arr">→</span></div>
+        <div class="sr con" onclick="openPath('con_inv')"><div class="sr-inner"><div class="sr-cat">Proyecto de investigación</div><div class="sr-title">Participé en un proyecto de investigación de un académico</div></div><span class="sr-arr">→</span></div>
+        <div class="sr con" onclick="openPath('con_inst')"><div class="sr-inner"><div class="sr-cat">Vínculo institucional</div><div class="sr-title">Quiero formalizar una colaboración con una institución externa</div></div><span class="sr-arr">→</span></div>
       </div>
 
     </div>
@@ -395,7 +396,7 @@ const PATHS = {
   tit:{
     module:'pi', type:'tree',
     label:'PI · Titularidad',
-    title:'¿La UC puede quedarse con mi proyecto?',
+    title:'¿De quién es la titularidad de lo que desarrollé?',
     intro:{
       body:'La respuesta es casi siempre la misma: el proyecto es tuyo. Los Lineamientos de PI de la Escuela de Diseño UC son claros al respecto. Este árbol te ayuda a confirmar tu situación y a entender las excepciones.',
       items:['Todo trabajo en taller, curso, memoria o tesis te pertenece','La UC no tiene uso significativo de medios en los talleres actuales','La titularidad solo cambia con un acuerdo previo y firmado']
@@ -424,7 +425,8 @@ const PATHS = {
         ref:'Lineamientos PI Escuela de Diseño UC · Sección 3 · Norma Central',
         tips:[
           {p:'Para publicar o difundir',b:'Revisa el módulo PI · Difusión para entender el proceso de autorización si hay confidencialidad involucrada.'},
-          {p:'Para llevar el proyecto más lejos',b:'El módulo PI · Fondos y Emprendimiento orienta sobre VIU, FONDEF, spin-off y concursos.'}
+          {p:'Para llevar el proyecto más lejos',b:'El módulo PI · Fondos y Emprendimiento orienta sobre VIU, FONDEF, spin-off y concursos.'},
+        {p:'Si usaste laboratorios UC para tu título',b:'No hay declaración formal obligatoria por eso. La Subdirección puede emitir un certificado de uso de laboratorio que es útil para futuras postulaciones a fondos como VIU, Capital Semilla Inicia o Semilla Expande de Corfo.'}
         ],
         cross:['dif','fon']
       },
@@ -458,7 +460,7 @@ const PATHS = {
   pro:{
     module:'pi', type:'tree',
     label:'PI · Protección',
-    title:'¿Puedo patentar o proteger lo que creé?',
+    title:'¿Puedo patentar o proteger lo que desarrollé?',
     intro:{
       body:'Hay cuatro mecanismos de protección distintos. Cuál aplica depende del tipo de creación. Y hay una regla crítica que no puede ignorarse: publicar antes de patentar invalida la patente.',
       items:['Soluciones técnicas e inventos (patente o modelo de utilidad)','Apariencia y forma de objetos (diseño industrial)','Obras creativas — textos, imágenes, software (derechos de autor)','Nombre, logo o identidad visual (marca)']
@@ -539,7 +541,7 @@ const PATHS = {
   dif:{
     module:'pi', type:'tree',
     label:'PI · Difusión',
-    title:'¿Puedo publicar o mostrar mi trabajo?',
+    title:'¿Puedo publicar o difundir este desarrollo?',
     intro:{
       body:'Tres cosas pueden restringir la difusión: el potencial de protección industrial, los acuerdos de confidencialidad con empresas, y en el caso de estudiantes, el proceso de autorización formal.',
       items:['Proyectos con potencial de patente o diseño industrial','Proyectos con acuerdo de confidencialidad firmado','Publicación de tesis y proyectos académicos','Difusión de material académico por el profesor']
@@ -551,7 +553,7 @@ const PATHS = {
     ],
     qs:[
       {ref:'Guía DTD UC V5 · Lineamientos PI Escuela',t:'¿Tu proyecto podría tener potencial de protección industrial?',note:'Patente, diseño industrial o modelo de utilidad. Si no estás seguro, selecciona "Sí o no sé".',ops:[{l:'Sí, o no estoy seguro',nx:'r_no_publicar'},{l:'No, descarto completamente esa posibilidad',nx:1}]},
-      {ref:'Acuerdo de Participación en Taller Académico · Lineamientos PI',t:'¿Existe algún acuerdo de confidencialidad relacionado al proyecto?',note:'NDA, Declaración de Confidencialidad firmada en el taller, contrato con empresa.',ops:[{l:'Sí, hay un acuerdo de confidencialidad vigente',nx:'r_conf'},{l:'No hay ningún acuerdo de confidencialidad',nx:2}]},
+      {ref:'Acuerdo de Participación en Taller Académico · Lineamientos PI',t:'¿Existe algún acuerdo de confidencialidad relacionado al proyecto?',note:'NDA, Declaración de Confidencialidad firmada en el curso o taller, contrato con empresa.',ops:[{l:'Sí, hay un acuerdo de confidencialidad vigente',nx:'r_conf'},{l:'No hay ningún acuerdo de confidencialidad',nx:2}]},
       {ref:'Arts. 14° y 25° · Reg. PI UC',t:'¿Quién quiere publicar o difundir el proyecto?',note:'',ops:[{l:'Soy estudiante y quiero publicar o comunicar públicamente',nx:'r_est_pub'},{l:'Soy académico y quiero difundir material de mis cursos',nx:'r_aca_pub'},{l:'Es un proyecto colectivo con académico y estudiantes',nx:'r_colectivo'}]}
     ],
     rs:{
@@ -566,11 +568,11 @@ const PATHS = {
       },
       r_conf:{
         h:'Revisar el acuerdo antes de difundir.',
-        b:'El acuerdo limita lo que puedes compartir, con quién y por cuánto tiempo. La confidencialidad rige durante el taller y hasta 1 año desde que las creaciones sean presentadas a la empresa.',
-        hi:[{t:'w',txt:'Lee el acuerdo: ¿qué es confidencial? ¿hasta qué fecha? Solo después de ese plazo estarás autorizado a incorporar el trabajo en tu portafolio de diseñador.'},{t:'i',txt:'Durante el período de confidencialidad, no publicar fotografías, videos ni publicaciones en redes sociales de lo acontecido en el taller.'}],
+        b:'El acuerdo limita lo que puedes compartir, con quién y por cuánto tiempo. La confidencialidad rige durante el curso o taller y hasta 1 año desde que las creaciones sean presentadas a la empresa.',
+        hi:[{t:'w',txt:'Lee el acuerdo: ¿qué es confidencial? ¿hasta qué fecha? Solo después de ese plazo estarás autorizado a incorporar el trabajo en tu portafolio de diseñador.'},{t:'i',txt:'Durante el período de confidencialidad, no publicar fotografías, videos ni publicaciones en redes sociales de lo acontecido en el curso o taller.'}],
         d:{n:'Dirección de Escuela',c:'investigacion.diseno@uc.cl'},
         ref:'Declaración Jurada de Confidencialidad · Acuerdo de Participación en Taller',
-        tips:[{p:'Período de 1 año',b:'El plazo de confidencialidad se cuenta desde la presentación final de las Creaciones a la empresa, no desde el inicio del taller.'},{p:'No asumir que venció',b:'Verifica la fecha exacta antes de publicar.'}],
+        tips:[{p:'Período de 1 año',b:'El plazo de confidencialidad se cuenta desde la presentación final de las Creaciones a la empresa, no desde el inicio del curso o taller.'},{p:'No asumir que venció',b:'Verifica la fecha exacta antes de publicar.'}],
         cross:['con_taller']
       },
       r_est_pub:{
@@ -635,14 +637,14 @@ const PATHS = {
   /* ════ CONVENIOS: TALLER ════ */
   con_taller:{
     module:'con', type:'tree',
-    label:'Convenios · Taller Académico',
-    title:'Una empresa participó como desafío en mi taller',
+    label:'Convenios · Curso o Taller',
+    title:'Una empresa u organización participó como contraparte en mi curso o taller',
     intro:{
       body:'Cuando una empresa presenta un desafío en un taller académico, la relación se rige por el Acuerdo de Participación en Taller Académico. Entiende exactamente qué puede y qué no puede hacer la empresa con los resultados.',
       items:['La PI siempre es del estudiante en el contexto de taller','Los resultados son mostrados a la empresa, no entregados','La empresa no puede usar los resultados sin acuerdo adicional','La confidencialidad rige por 1 año desde la presentación final']
     },
     ctx:[
-      {tag:'Norma central',tg_type:'teal',t:'Los resultados pertenecen al estudiante',b:'La empresa declara que conoce el objetivo académico del taller y que los estudiantes no desarrollarán productos en condiciones de ser comercializados. La empresa no tiene derecho a usar los resultados sin acuerdo previo con los estudiantes o con la UC.'},
+      {tag:'Norma central',tg_type:'teal',t:'Los resultados pertenecen al estudiante',b:'La empresa u organización declara que conoce el objetivo académico del curso o taller y que los estudiantes no desarrollarán productos en condiciones de ser comercializados. La empresa no tiene derecho a usar los resultados sin acuerdo previo con los estudiantes o con la UC.'},
       {tag:'Confidencialidad',tg_type:'warn',t:'¿Qué firmaste como estudiante?',b:'Los estudiantes firman una Declaración Jurada de Confidencialidad y Manejo de Conflicto de Interés. Esto incluye no publicar ni compartir resultados en redes sociales durante el período de confidencialidad (hasta 1 año desde la presentación final).'},
       {tag:null,t:'¿Qué puede hacer la empresa?',b:'La empresa puede ver los resultados en la presentación final. No puede usar, copiar, adaptar ni comercializar ninguna Creación sin un acuerdo adicional explícito con los estudiantes o con la UC.'}
     ],
@@ -659,29 +661,30 @@ const PATHS = {
     rs:{
       r_publicar:{
         h:'Puedes publicar cuando venza el período de confidencialidad.',
-        b:'La Declaración de Confidencialidad que firmaste rige durante el taller y hasta 1 año desde que las Creaciones fueron presentadas a la empresa. Solo después de ese plazo estás autorizado a incorporar el trabajo en tu portafolio.',
-        hi:[{t:'i',txt:'La confidencialidad también aplica a redes sociales, fotos y videos del taller — no publicar nada durante el período vigente.'},{t:'ok',txt:'Una vez vencido el plazo, puedes publicar libremente sin necesitar autorización adicional.'}],
+        b:'La Declaración de Confidencialidad que firmaste rige durante el curso o taller y hasta 1 año desde que las Creaciones fueron presentadas a la empresa. Solo después de ese plazo estás autorizado a incorporar el trabajo en tu portafolio.',
+        hi:[{t:'i',txt:'La confidencialidad también aplica a redes sociales, fotos y videos del curso o taller — no publicar nada durante el período vigente.'},{t:'ok',txt:'Una vez vencido el plazo, puedes publicar libremente sin necesitar autorización adicional.'}],
         d:{n:'Dirección de Escuela · Para confirmar fechas',c:'investigacion.diseno@uc.cl'},
         ref:'Declaración Jurada de Confidencialidad · Acuerdo de Participación en Taller',
-        tips:[{p:'Calcula el plazo',b:'El año de confidencialidad se cuenta desde la presentación final de las Creaciones a la empresa, no desde el inicio del taller.'},{p:'Instancias permitidas',b:'Puedes mostrar el proyecto en instancias académicas privadas (comisión de taller, revisiones internas) sin que cuente como difusión pública.'}],
+        tips:[{p:'Calcula el plazo',b:'El año de confidencialidad se cuenta desde la presentación final de las Creaciones a la empresa, no desde el inicio del curso o taller.'},{p:'Instancias permitidas',b:'Puedes mostrar el proyecto en instancias académicas privadas (comisión de taller, revisiones internas) sin que cuente como difusión pública.'}],
         cross:['dif']
       },
       r_interes:{
         h:'La empresa necesita un acuerdo adicional — tienes dos opciones.',
-        b:'La empresa no puede usar los resultados del taller sin un acuerdo explícito. Hay dos caminos: un acuerdo directo entre tú y la empresa (sin UC), o un Acuerdo de I+D con la UC si necesitan respaldo académico.',
+        b:'La empresa no puede usar los resultados del curso o taller sin un acuerdo explícito. Hay dos caminos: un acuerdo directo entre tú y la empresa (sin UC), o un Acuerdo de I+D con la UC si necesitan respaldo académico.',
         hi:[{t:'ok',txt:'Opción 1: Acuerdo directo estudiante–empresa. Tú autorizas el uso o desarrollo posterior fuera del marco UC, a cambio de algún beneficio.'},{t:'ok',txt:'Opción 2: Acuerdo de I+D con la UC, cuando la empresa necesita respaldo académico, laboratorios o aval institucional.'}],
         d:{n:'Dirección de Escuela · Antes de comprometerte con algo',c:'investigacion.diseno@uc.cl'},
         ref:'Acuerdo de Participación en Taller · Lineamientos PI Escuela · Sección 5',
-        tips:[{p:'No comprometerte sin orientación',b:'Consulta a la Dirección de Escuela antes de aceptar cualquier propuesta de la empresa. Ellos pueden orientarte sobre cuál camino conviene más.'}],
+        tips:[{p:'No comprometerte sin orientación',b:'Consulta a la Dirección de Escuela antes de aceptar cualquier propuesta de la empresa. Ellos pueden orientarte sobre cuál camino conviene más.'},
+        {p:'Si los profesores participaron activamente en el desarrollo',b:'En casos donde los académicos contribuyeron significativamente (no solo como guías), la distribución de PI puede requerir análisis específico. La Subdirección orienta este proceso.'}],
         cross:['con_uso','tit']
       },
       r_conf_taller:{
         h:'La Declaración de Confidencialidad define tus obligaciones.',
         b:'Como estudiante firmaste una Declaración Jurada de Confidencialidad. Esta establece las restricciones de publicación y el período de confidencialidad (hasta 1 año desde la presentación final de las Creaciones a la empresa).',
-        hi:[{t:'w',txt:'No publicar fotografías, videos ni publicaciones en redes sociales de lo acontecido en el taller mientras el período esté vigente.'},{t:'i',txt:'La confidencialidad también aplica a la información recibida de la empresa durante el taller.'}],
+        hi:[{t:'w',txt:'No publicar fotografías, videos ni publicaciones en redes sociales de lo acontecido en el curso o taller mientras el período esté vigente.'},{t:'i',txt:'La confidencialidad también aplica a la información recibida de la empresa durante el curso o taller.'}],
         d:{n:'Dirección de Escuela · Para revisar el acuerdo',c:'investigacion.diseno@uc.cl'},
         ref:'Declaración Jurada de Confidencialidad · Acuerdo de Participación en Taller',
-        tips:[{p:'Qué no es confidencial',b:'Información de dominio público al momento de la firma, o que puedas probar que tenías por título legítimo antes del taller.'},{p:'Si tienes dudas',b:'Consulta con tu profesor guía o con la Dirección de Escuela antes de publicar o compartir cualquier material.'}],
+        tips:[{p:'Qué no es confidencial',b:'Información de dominio público al momento de la firma, o que puedas probar que tenías por título legítimo antes del curso o taller.'},{p:'Si tienes dudas',b:'Consulta con tu profesor guía o con la Dirección de Escuela antes de publicar o compartir cualquier material.'}],
         cross:['dif']
       }
     }
@@ -691,13 +694,13 @@ const PATHS = {
   con_uso:{
     module:'con', type:'tree',
     label:'Convenios · Uso Comercial',
-    title:'Una empresa quiere usar o comercializar mi proyecto',
+    title:'Una empresa u organización está interesada en mi desarrollo o solución',
     intro:{
       body:'Cuando una empresa quiere usar o comercializar tu proyecto, hay dos caminos: un acuerdo directo entre tú y la empresa, o un Acuerdo de I+D con la UC. La elección depende de si la empresa necesita el respaldo académico de la Universidad.',
       items:['PI del estudiante en ambos casos','Acuerdo directo: sin participación de la UC','Acuerdo I+D: con respaldo académico UC','Definir siempre antes de iniciar cualquier trabajo adicional']
     },
     ctx:[
-      {tag:'La PI siempre es tuya',tg_type:'teal',t:'El punto de partida es claro',b:'Los resultados del taller te pertenecen. Para que la empresa pueda usarlos, necesitas un acuerdo explícito — ya sea directo contigo o con la UC como intermediaria.'},
+      {tag:'La PI siempre es tuya',tg_type:'teal',t:'El punto de partida es claro',b:'Los resultados del curso o taller te pertenecen. Para que la empresa pueda usarlos, necesitas un acuerdo explícito — ya sea directo contigo o con la UC como intermediaria.'},
       {tag:'Licencia vs cesión',tg_type:null,t:'¿Qué tipo de acuerdo conviene?',b:'Una licencia de uso te permite mantener la propiedad y autorizar el uso bajo condiciones (exclusividad, territorio, plazo, precio). Una cesión transfiere los derechos permanentemente. La licencia es generalmente más conveniente.'},
       {tag:null,t:'Cuándo involucrar a la UC',b:'Si la empresa quiere respaldo académico (laboratorios, aval institucional, investigación adicional), el camino es el Acuerdo de I+D con la UC. La Dirección de Escuela facilita el proceso con VRIP.'}
     ],
@@ -787,11 +790,78 @@ const PATHS = {
     }
   },
 
+
+
+  /* ════ CONVENIOS: VÍNCULO INSTITUCIONAL (Jacinta's scenario) ════ */
+  con_inst:{
+    module:'con', type:'tree',
+    label:'Convenios · Vínculo Institucional',
+    title:'Quiero formalizar una colaboración con una institución externa',
+    intro:{
+      body:'Cuando una institución externa quiere participar formalmente en tu proyecto académico, existen distintos tipos de acuerdo según el nivel de colaboración. La Dirección de la Escuela ha desarrollado formatos adaptados a cada situación.',
+      items:['Municipalidades y organismos públicos','ONGs e instituciones sin fines de lucro','Organismos internacionales','Cualquier institución externa a la UC']
+    },
+    ctx:[
+      {tag:'Depende del nivel de colaboración',tg_type:'teal',t:'Tres tipos de acuerdo disponibles',b:'La Dirección de la Escuela ha desarrollado distintos formatos según el grado de cooperación: Memorándum de Entendimiento (MdE), Convenio General de Cooperación y Convenio Marco de Colaboración. El tipo adecuado depende de los objetivos y alcances de la relación.'},
+      {tag:null,t:'Memorándum de Entendimiento (MdE)',b:'Para colaboraciones de menor formalidad: intercambio de información, acceso a datos o instalaciones, participación puntual. Es el instrumento más ágil y el punto de partida habitual.'},
+      {tag:null,t:'Convenio General de Cooperación',b:'Para colaboraciones activas: reuniones periódicas, instancias conjuntas, desarrollo colaborativo. Establece un marco de trabajo con compromisos mutuos.'},
+      {tag:null,t:'Convenio Marco de Colaboración',b:'Para relaciones amplias y continuas que pueden incluir múltiples proyectos o actividades. Establece las bases generales; los proyectos específicos se regulan con acuerdos particulares.'}
+    ],
+    qs:[
+      {ref:'Subdirección de Investigación y Transferencia · Dirección de Escuela',
+       t:'¿Qué tipo de colaboración buscas formalizar con la institución?',
+       note:'La institución puede ser una municipalidad, ONG, organismo público u otra organización externa a la UC.',
+       ops:[
+         {l:'Intercambio de información, acceso a datos o instalaciones, participación puntual',nx:'r_mou'},
+         {l:'Participación activa: reuniones periódicas, desarrollo conjunto, trabajo colaborativo',nx:'r_cgc'},
+         {l:'Relación amplia y continua que puede incluir múltiples proyectos o actividades',nx:'r_cmc'}
+       ]}
+    ],
+    rs:{
+      r_mou:{
+        h:'Un Memorándum de Entendimiento (MdE) es el instrumento adecuado.',
+        b:'El MdE es el instrumento más ágil para formalizar intercambios de información, acceso a datos, o participación puntual. Establece los términos básicos sin compromisos extensos. Es el punto de partida más habitual para vínculos iniciales.',
+        hi:[{t:'ok',txt:'El MdE es el camino más rápido para formalizar. Si la colaboración evoluciona, se puede escalar a un Convenio de Cooperación.'}],
+        d:{n:'Dirección de Escuela · Para iniciar el proceso',c:'investigacion.diseno@uc.cl'},
+        ref:'Subdirección de Investigación y Transferencia · Escuela de Diseño UC',
+        tips:[
+          {p:'Cómo iniciar',b:'Contacta a la Dirección de Escuela explicando la institución y el tipo de participación que se busca. Ellos orientan el proceso y coordinan con las instancias UC correspondientes.'},
+          {p:'La institución también debe firmarlo',b:'Es un documento bilateral. La institución debe designar a alguien con autoridad para firmar.'}
+        ],
+        cross:['con_taller','tit']
+      },
+      r_cgc:{
+        h:'Un Convenio General de Cooperación es el instrumento adecuado.',
+        b:'Para colaboraciones con participación activa — reuniones periódicas, instancias conjuntas, desarrollo colaborativo — el Convenio General de Cooperación establece compromisos mutuos claros. Es habitual en proyectos de título con vínculos institucionales activos.',
+        hi:[{t:'ok',txt:'Este tipo de convenio es el más habitual para proyectos de título con vínculos institucionales activos.'},{t:'i',txt:'El proceso de negociación y firma puede tomar semanas. Inicia la conversación lo antes posible.'}],
+        d:{n:'Dirección de Escuela · Para iniciar el proceso',c:'investigacion.diseno@uc.cl'},
+        ref:'Subdirección de Investigación y Transferencia · Escuela de Diseño UC',
+        tips:[
+          {p:'Cómo iniciar',b:'Contacta a la Dirección de Escuela con los detalles de la institución y el alcance de la colaboración. Ellos coordinan con VRIP si es necesario.'},
+          {p:'PI resultante',b:'El convenio debe definir la propiedad intelectual de los resultados generados en el marco de la colaboración.'}
+        ],
+        cross:['con_taller','tit']
+      },
+      r_cmc:{
+        h:'Un Convenio Marco de Colaboración establece las bases generales.',
+        b:'Para relaciones amplias y continuas con la institución, que pueden incluir múltiples proyectos o actividades a lo largo del tiempo. Una vez firmado, facilita iniciar nuevas colaboraciones sin necesitar un nuevo convenio cada vez.',
+        hi:[{t:'i',txt:'El Convenio Marco es el más formal de los tres. Suele requerir más tiempo de negociación y aprobación institucional.'},{t:'ok',txt:'Una vez firmado, facilita iniciar nuevas colaboraciones bajo ese marco de forma más ágil.'}],
+        d:{n:'Dirección de Escuela → VRIP',c:'investigacion.diseno@uc.cl'},
+        ref:'Subdirección de Investigación y Transferencia · Escuela de Diseño UC',
+        tips:[
+          {p:'Cuándo tiene sentido',b:'Cuando la relación con la institución está pensada para el largo plazo y puede incluir múltiples proyectos o actividades.'},
+          {p:'PI en el Convenio Marco',b:'El marco define la PI de los resultados. Los acuerdos específicos pueden detallar casos particulares.'}
+        ],
+        cross:['con_taller','tit']
+      }
+    }
+  },
+
   /* ════ ÉTICA: ¿NECESITO? ════ */
   nec:{
     module:'eti', type:'tree',
     label:'Ética · ¿Necesito evaluación?',
-    title:'¿Mi proyecto necesita aprobación ética?',
+    title:'¿Necesito evaluación de ética para mi proyecto?',
     intro:{
       body:'El Comité Ético Científico (CEC) de Cs. Sociales, Artes y Humanidades UC evalúa proyectos que involucran personas. Hay tres modalidades según el nivel de riesgo y el tipo de financiamiento.',
       items:['Investigación con personas como participantes directos','Proyectos con financiamiento ANID o internacional','Proyectos con riesgo para participantes (datos sensibles)','Proyectos formativos de bajo riesgo (exención)']
@@ -836,6 +906,7 @@ const MOD_COLORS = { pi:'#1B3F7A', eti:'#7A3020', con:'#0A5C47' };
 const CROSS_LABELS = {
   tit:'PI · Titularidad', pro:'PI · Protección', dif:'PI · Difusión', fon:'PI · Fondos',
   con_taller:'Convenios · Taller Académico', con_uso:'Convenios · Uso Comercial', con_inv:'Convenios · Proyecto de Investigación',
+  con_inst:'Convenios · Vínculo Institucional',
   nec:'Ética · ¿Necesito evaluación?', proc:'Ética · Solicitud CEC'
 };
 
